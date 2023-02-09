@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <%if(photos.length>0){%>
+            <h1>Uploaded Images</h1>
+        <% photos.forEach(function(image) { %>
+        <div>
+            <div>
+                    <img src="<%=image.photo.toString('base64')%>">
+            <div>
+                <h5>TimeStamp</h5>
+                <p><%= image.timestamp %></p>
+                <hr>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+    <% } else { %>
+        <h1>No Photos To Show</h1>
+    <% } %>
+</body>
+</html>

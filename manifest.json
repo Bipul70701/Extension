@@ -1,0 +1,12 @@
+{
+    "name":"Intern Assignment",
+    "description":"Bipul Extension",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"icon.png"
+    },
+    "permissions":["activeTab", "tabs"],
+    "host_permissions":["http://localhost/3000/*"]
+}
